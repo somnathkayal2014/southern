@@ -1,0 +1,167 @@
+/* ============= 1440px ================ */
+@media(max-width:1440px){
+    /* ============== service ============ */
+    .service .container-fluid .row .col-30{
+        max-width: 50%;
+        flex: 0 0 50%;
+        margin-bottom: 30px;
+    }
+}
+/* =============== 1366px ============= */
+@media(max-width:1366px){
+    /* ============ navbar ================ */
+    .navbar .nav-menu li a{
+        padding: 0 8px;
+    }
+}
+/* =============== 1199px ================= */
+@media(max-width:1199px){
+    /* ========== navbar =========== */
+    .header .logo a{
+        max-width: 120px;
+    }
+    .navbar .nav-menu li a{
+        font-size: 13px;
+    }
+    /* ========== footer ============ */
+    /* .footer .col-40{
+        max-width: 50%;
+        flex: 0 0 50%;
+    } */
+}
+/* ================ 1024px ================== */
+@media(max-width:1024px){
+    /* ============== navbar ============ */
+    .navbar .cmn-btn{
+        font-size: 14px;
+    }
+    /* ============== expert ================= */
+    .expert .row .col-60 p{
+        margin-bottom: 15px;
+    }
+}
+/* =================== 991px ================== */
+@media(max-width:991px){
+    /* =========== navbar =========== */
+    .navbar .nav-menu{
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        background: var(--primary-gray);
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+    .navbar .nav-menu.active{
+        transform: translateX(0);
+    }
+    .hamburger{
+        display: flex;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: rotate(45deg) translateY(7px);
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: rotate(-45deg) translateY(-7px);
+    }
+    /* ============== expert =============== */
+    .expert .row .col-40{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    .expert .container .col-40 img{
+        margin-bottom: 30px;
+    }
+    .expert .row .col-60{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    /* ============ stay ================= */
+    .stay .container .head{
+        flex-direction: column;
+    }
+    .stay .container .head .cmn-btn{
+        margin-bottom: 30px;
+    }
+    .stay .row .col-30{
+        max-width: 50%;
+        flex: 0 0 50%;
+    }
+    .stay .row .col-30 .card{
+        margin-bottom: 20px;
+    }
+}
+/* ============== 767px ================== */
+/* ============= banner ================ */
+@media(max-width:767px){
+    .banner h1{
+        font-size: 50px;
+    }  
+    /*============= service ==============  */
+    .service .container .head h2{
+        font-size: 25px;
+    }
+    .service .container .cmn-btn{
+        padding: 8px 18px;
+        font-size: 15px;
+    }
+    .service .container-fluid .row .col-30{
+        max-width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 30px;
+    }
+    /* =============== stay ============== */
+    .stay .row .col-30{
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+}
+/* ==================== 575px =================== */
+@media(max-width:575px){
+    /* ============= service ============= */
+    .service .container{
+        flex-direction: column;
+    }
+    .service .container .head h2{
+        margin-bottom: 20px;
+    }
+    .service .container .cmn-btn{
+        margin-bottom: 20px;
+    }
+}
+/* ==================== 480px ================== */
+/* ================== banner ================== */
+@media(max-width:480px){
+    .banner h1{
+        font-size: 30px;
+    }
+    /* ============= service ============= */
+    .service .container-fluid .col-30 .cmn-btn{
+        display: none;
+    }
+    .service .container-fluid .col-30 .card{
+        margin-bottom: 0;
+    }
+    .service .container-fluid .col-30 h3{
+        margin-bottom: 18px;
+        font-size: 18px;
+    }
+    .service .container-fluid .col-30 p{
+        font-size: 14px;
+    }
+}
+/* ================== 375px ============= */
+/* ================ expert ================ */
+@media(max-width:375px){
+    .expert .container .head h3{
+        font-size: 25px;
+        font-weight: 800;
+    }
+}
